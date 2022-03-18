@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+body {
+background: rgb(157,219,227);
+background: linear-gradient(90deg, rgba(157,219,227,1) 0%, rgba(187,209,228,1) 23%, rgba(242,190,231,1) 100%);
+  );
+  font-family: 'Playfair Display', serif;
+}
+/* pra modificar apenas uma parte do texto, separamos em classe, que pode ser chamar com o . */
+
+.container {
+  background: #FAEBD7;
+  color: #DB7093;
+  margin: 64px; 
+  margin-top: 15%;
+  border-radius: 30px;
+  box-shadow: 6px 6px 6px #708090;
+  padding: 64px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.perfil {
+  display: flex;
+/*  align-items:center; */
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 230px;
+  max-width; 120px;
+  drop-shadow: 6px 6px 6px 2px #708090;
+}
+
+.titulo {
+  color: #FFB6C1;
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  color: #DB7093;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h2 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.titulo h3 {
+  font-weight: 200;
+  font-size: 20px;
+}
+
+.tema button {
+  align-self: flex-end;
+  padding: 8px 16px;
+  background: #ECF4F;
+  border-radius: 100px;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+/*  align-items: center; */
+ background: rgb(255,188,249);
+background: linear-gradient(90deg, rgba(157,219,227,1) 0%, rgba(187,209,228,1) 23%, rgba(242,190,231,1) 100%);
+  margin-top: 40px;
+  padding: 32px;
+  box-shadow: 2px 2px 4px #708090;
+border-radius: 20px;
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400; 
+  font-size: 32px;
+/*  font-size: 20px; */
+  text-align: center;
+  
+}
+
+.projetos-item {
+  list-style-type: "\1F536";
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 40px;
+  
+}
+
+.projetos-item a {
+  color: #FFB6C1;
+  text-decoration: none;
+  
+}
+
+a:hover {
+ text-decoration: none;
+ color: #DA70D6;
+}
+
+/* quando mudado para o tema dark todos os elementos mudaram de cor */
+.dark {
+  background: rgb(18,0,36);
+background: linear-gradient(270deg, rgba(18,0,36,1) 0%, rgba(65,9,121,1) 32%, rgba(95,60,172,1) 65%, rgba(165,109,251,1) 100%);
+  
+}
+ 
+/* todo o elemnto que estiver dentro da classe container que está dentro da classe dark será alterado */
+.dark .container {
+  background: #333439;
+  color: #a56dfb;
+  box-shadow: 6px 6px 6px #0E1D2F;
+}
+
+.dark .titulo {
+ color: #9932CC;
+}
+
+.dark .titulo h1 {
+  color: #a56dfb;
+}
+
+.dark .projetos {
+  background: rgb(18,0,36);
+background: linear-gradient(270deg, rgba(18,0,36,1) 0%, rgba(65,9,121,1) 32%, rgba(95,60,172,1) 66%, rgba(165,109,251,1) 100%);
+  box-shadow: 6px 6px 6px #0E1D2F;
+}
+.dark .tema button {
+  background: #1C1C1C;
+  border: 2px solid #f7f7f7;
+}
+/*.codepen {
+  max-width:320px;
+} */
